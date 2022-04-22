@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Akshar", sans-serif;
+}
+body {
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  background-color: #85ffbd;
+}
+
+.avatar {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-img {
+  width: 140px;
+  height: auto;
+  margin: 0.5rem;
+}
+.h1-div {
+  width: 100vw;
+  height: auto;
+}
+.h1-text {
+  margin: 0.7rem;
+  font-size: 2rem;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  height: auto;
+}
+.button {
+    margin: 1rem;
+    background-color: rgb(192, 192, 192);
+    padding: 0.7rem 2rem;
+    background-image: linear-gradient(
+        to right,
+        #7474bf 0%,
+    #348ac7 51%,
+    #7474bf 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 7px;
+  transition: transform 0.4s;
+  width: 50rem;
+}
+@media screen and (max-width: 800px) {
+    .button{
+        width: 40rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .button{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .button{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 530px) {
+    .button{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .button{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .button{
+        width:15rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .button{
+        width:11rem;
+    }
+}
+.button:hover {
+  transform: scaleX(1.05);
+  display: block;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+}
+.button-text {
+    color: #fff ;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  font-size: 1.2rem;
+}
