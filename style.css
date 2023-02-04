@@ -73,3 +73,28 @@ main {
     text-align: center;
   font-size: 1.2rem;
 }
+footer{
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #242424;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.txt{
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+}
+.logos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.logos img{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 35px;
+}
