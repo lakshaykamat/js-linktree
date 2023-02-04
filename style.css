@@ -36,9 +36,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: fit-content;
-  margin: auto;
-  height: auto;
 }
 .button {
     margin: 1rem;
@@ -56,43 +53,13 @@ main {
   box-shadow: 0 0 20px #eee;
   border-radius: 7px;
   transition: transform 0.4s;
-  width: 50rem;
+  width: 40%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .button{
-        width: 40rem;
+        width: 80%;
     }
-}
-@media screen and (max-width: 650px) {
-    .button{
-        width: 30rem;
-    }
-}
-@media screen and (max-width: 650px) {
-    .button{
-        width: 30rem;
-    }
-}
-@media screen and (max-width: 530px) {
-    .button{
-        width: 30rem;
-    }
-}
-@media screen and (max-width: 500px) {
-    .button{
-        width: 20rem;
-    }
-}
-@media screen and (max-width: 380px) {
-    .button{
-        width:15rem;
-    }
-}
-@media screen and (max-width: 300px) {
-    .button{
-        width:11rem;
-    }
-}
+} 
 .button:hover {
   transform: scaleX(1.05);
   display: block;
