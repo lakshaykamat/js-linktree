@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table | By Lakshay Kamat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+
+  <!-- ----------------------------------------------------------------------Navigation Bar------------------------------------------------------------------------------- -->
+  <nav class="navbar">
+    <div class="brand-title">X Table</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ----------------------------------------------------------------------Navigation Bar------------------------------------------------------------------------------- -->
+
+<!-- --------------------------------------------------------------------------Main Div---------------------------------------------------------------------------------------- -->
+<main>
+  <input id="number" class="input" placeholder="Enter a Number" /><br>
+  <button onclick="multiply()" class="btn" type="submit">Get Multipcation Table</button>
+  <div class="result-div">
+    <div id="result" class=sol></div>
+  </div>
+</main>
+<!-- --------------------------------------------------------------------------Main Div---------------------------------------------------------------------------------------- -->
+<div class="side-links">
+
+  <div class="github-div">
+    <a href="https://github.com/lakshaykamat/multiply" target="_blank"><img src="Images/GitHub-Mark-32px.png" alt="Github" class="github-img"></a>
+  </div>
+
+  <div class="github-div">
+    <a href="https://www.instagram.com/lakshaykamat/" target="_blank"><img src="Images/Instagram.png" width="32px" height="32px" alt="Github" class="github-img"></a>
+  </div>
+
+  <div class="github-div">
+    <a href="https://github.com/lakshaykamat/multiply" target="_blank"><img src="Images/Youtube.png" width="32px" height="32px" alt="Github" class="github-img"></a>
+  </div>
+
+</div>
+
+<!-- --------------------------------------------------------------------Footer------------------------------------------------------------------- -->
+<footer>
+  <div class="foot-div-1">
+    <span class="foot-txt">&#169;2022 | Created by Lakshay Kamat &#128151;</span> 
+    </div>
+    <div class="foot-div-2">
+    </div>
+  </footer>
+  <!-- --------------------------------------------------------------------Footer------------------------------------------------------------------- -->
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+    })
+  </script>
+</body>
+</body>
+
+</html>
