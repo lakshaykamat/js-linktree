@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    transition: .5 ease;
+}

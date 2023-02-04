@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator | By Lakshay Kamat</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="img-div">
+                <img src="Images/key.jpg" alt="">
+            </div>
+            <div class="h1-div">
+                <h1>Password Generator</h1>
+            </div>
+        </section>
+        <hr>
+        <div class="container">
+
+            <div class="input">
+                <label for="length">Password Length:</label>
+                <select name="length" id="length">
+                    <optgroup label="Weak">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </optgroup>
+                    <optgroup label="Strong">
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                    </optgroup>
+                </select>
+                </div>
+
+                <div class="input below">
+                    <label for="symbols">Include Symbols:</label>
+                        <input type="checkbox" name="symbols" id="symbol">
+                    <!-- <span>(e.g. @#$%)</span> -->
+                </div>
+
+                <div class="input">
+                    <label for="Numbers">Include Numbers:</label>
+                    <input type="checkbox" name="Numbers" id="number">
+                    <!-- <span>(e.g. 123456)</span> -->
+                </div>
+
+                <div class="input">
+                    <label for="Lowercase">Include Lowercase Charcters:</label>
+                    <input type="checkbox" name="Lowercase" id="lowercase">
+                    <!-- <span>(e.g. abcd)</span> -->
+                </div>
+                <div class="input">
+                    <label for="Uppercase">Include Uppercase Charcters:</label>
+                    <input type="checkbox" name="Uppercase" id="uppercase">
+                    <!-- <span>(e.g. ABCD)</span> -->
+                </div>
+                <button type="submit" id="generatebutton">Generate Password</button>
+                <div class="output">
+                    <span id="password">Password Appear Here</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" id="copy">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                      </svg>
+                </div>
+                <!-- <button>Copy</button> -->
+        </div>
+    </main>
+</body>
+</html>

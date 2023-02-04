@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Currency Convertor</h1>
+    </div>
+    <main> 
+        <select id="allQuote"  onchange="checkMoney()">
+            <option value="USD">US Dollar (USD)</option>
+            <option value="INR">Indian Rupee (INR)</option>
+            <option value="SGD">Singapore Dollar (SGD)</option>
+            <option value="MYR">Malaysian Ringgit (MYR)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="CNH">Chinese Yuan (CNH)</option>
+            <option value="HKD">Hong Kong Dollar (HKD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="DKK">Danish Krone (DKK)</option>
+            <option value="GBP">Pound sterling (GBP)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+            <option value="NZD">New Zealand Dollar (NZD)</option>
+            <option value="MXN">Mexican Peso (MXN)</option>
+            <option value="IDR">Indonesian Rupiah (IDR)</option>
+            <option value="TWD">Taiwan dollar (TWD)</option>
+            <option value="THB">Thai Baht (THB)</option>
+            <option value="VND">Vietnamese dong (VND)</option>
+        </select>
+        <input type="number" id="userText" onkeyup="checkMoney()" placeholder="Enter Amount">
+        <select id="allQuotes" onchange="checkMoney()">
+            <option value="INR">Indian Rupee (INR)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="SGD">Singapore Dollar (SGD)</option>
+            <option value="MYR">Malaysian Ringgit (MYR)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="CNH">Chinese Yuan (CNH)</option>
+            <option value="HKD">Hong Kong Dollar (HKD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="DKK">Danish Krone (DKK)</option>
+            <option value="GBP">Pound sterling (GBP)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+            <option value="NZD">New Zealand Dollar (NZD)</option>
+            <option value="MXN">Mexican Peso (MXN)</option>
+            <option value="IDR">Indonesian Rupiah (IDR)</option>
+            <option value="TWD">Taiwan dollar (TWD)</option>
+            <option value="THB">Thai Baht (THB)</option>
+            <option value="VND">Vietnamese dong (VND)</option>
+        </select>
+        <input type="number" id="outText">
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

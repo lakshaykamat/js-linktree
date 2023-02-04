@@ -1,0 +1,27 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Text Animation */
+.animation-fade-out{
+    animation: animation-fade-out 1s ease-out;
+}
+@keyframes animation-fade-out{
+    0%{opacity:0;transform:translateX(-100px);}
+    100%{opacity:1;transform:translateX(0);}
+    }
+.animation-fade-out1{
+    animation: animation-fade-out1 1s ease-out 0.2s;
+}
+@keyframes animation-fade-out1{
+    0%{opacity:0;transform:translateX(-100px);}
+    100%{opacity:1;transform:translateX(0);}}
+/* ************************* */
+
+    /* Some Extra Media Quries */
+@media only screen and (max-width:345px) {
+    #small-font{
+        font-size: 1.3rem;
+    }
+}
+/* ********************************* */

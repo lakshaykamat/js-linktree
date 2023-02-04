@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid; */
+    transition: .5s all ease;
+}
+
+body {
+    background-color: #f4df4eff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.appName {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.inputDiv {
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: auto;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    border: none;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgb(230, 230, 230);
+    color: #000;
+}
+
+input:focus {
+    outline: 2.5px solid #000;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#errorMsg {
+    color: red;
+    text-transform: capitalize;
+}
+
+button {
+    border: 0;
+    background-color: #fff;
+    margin: 1rem;
+    font-size: .8rem;
+    padding: 1rem 2rem;
+    color: #000;
+    transition: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+button:active {
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    color: #000;
+    padding: 2rem;
+    /* display: flex; */
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    display: none;
+}
+
+#temp {
+    margin: .5rem;
+}
+
+#tempDiv {
+    margin: 1rem;
+    text-align: center;
+}
+
+#tempMin {
+    margin: .5rem;
+}
+#weather{
+    text-align: center;
+}
+#tempMax {
+    margin: .5rem;
+}
+
+#place {
+    margin: .5rem;
+}

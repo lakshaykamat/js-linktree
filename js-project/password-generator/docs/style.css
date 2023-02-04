@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Finlandica&display=swap');
+:root{
+    --black-color: #000;
+    --white-color:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    transition: .5s ease;
+    box-sizing: border-box;
+    font-family: 'Finlandica', sans-serif;
+}
+body{
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 6px;
+    background-color: var(--white-color);
+}
+section{
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    margin: .4rem;
+}
+h1{
+    margin: .4rem;
+}
+hr{
+    margin: .5rem;
+    height: 1px;
+    width: 100%;
+}
+.includesymbols{
+    display: inline-block;
+}
+.input{
+    padding: .3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: .5rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+button{
+    margin: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: var(--white-color);
+    background-color: rgb(20,20,20);
+    border: none;
+    padding: .7rem;
+    cursor: pointer;
+    transition: none;
+}
+button:active{
+    transition: none;
+    background-color: var(--black-color);
+}
+.output{
+    position: relative;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 1rem;
+    padding: .5rem;
+    text-align: center;
+    background-color: rgb(191, 191, 191);
+    color: var(--black-color)
+}
+select{
+    width: 20%;
+}
+svg{
+    cursor: pointer;
+    position: absolute;
+    top: 8%;
+    right: 7px;
+    width: 25px;
+}

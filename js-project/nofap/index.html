@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No fap Timer | By Lakshay Kamat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="star" onclick="sidebar()" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+    </svg>
+
+    <!-- -------------------------SideBar---------------------------- -->
+    <div id="sidebar" class="openSidebaranima">
+        <svg xmlns="http://www.w3.org/2000/svg" id="closeSideBar" class="h-6 w-6" onclick="closeSideBar()" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+
+        <div class="achieveName" id="achieveName">
+            <h2>Achievements</h2>
+            <div class="item border">New Bee (Day 1)</div>
+            <div class="item">Private (Day 3)</div>
+            <div class="item">Sergeant (Day 5)</div>
+            <div class="item">Master Sergeant (Day 7)</div>
+            <div class="item">Knight (Day 10)</div>
+            <div class="item">Knight-Lieutant (Day 14)</div>
+            <div class="item">Knight-Captain (Day 21)</div>
+            <div class="item">Knight-Champion (Day 30)</div>
+            <div class="item">Champion of the Light (Day 60)</div>
+            <div class="item">Commander (Day 90)</div>
+            <div class="item">Conqueror (Day 120)</div>
+            <div class="item">Marshal (Day 150)</div>
+            <div class="item">Field Marshal (Day 180)</div>
+            <div class="item">Grand Marshal (Day 240)</div>
+            <div class="item">High Overload (Day 300)</div>
+            <div class="item">Immortal (Day 365)</div>
+        </div>
+    </div>
+    <!-- -------------------------SideBar---------------------------- -->
+    <span id="lastrelapse">06/09/22</span>
+    <h1 class="h1">It has been</h1>
+
+    <div class="countdown-container">
+        <div class="countdown-el days-c">
+            <p class="big-text" id="days">0</p>
+            <span>DAYS</span>
+        </div>
+        <div class="countdown-el hours-c">
+            <p class="big-text" id="hours">0</p>
+            <span>HOURS</span>
+        </div>
+        <div class="countdown-el mins-c">
+            <p class="big-text" id="mins">0</p>
+            <span>MINUTES</span>
+        </div>
+        <div class="countdown-el seconds-c">
+            <p class="big-text" id="seconds">0</p>
+            <span>SECONDS</span>
+        </div>
+    </div>
+    <div id="achievementDiv">
+        <span id="achieve"></span>
+        <span id="quote"></span>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <input type="datetime-local" name="" id="input">
+        <button onclick="removepop()" class="btn">SUBMIT</button>
+    </div>
+    <button class="edit-btn" onclick="popup()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="svg" fill="#adf0d1" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+        </svg>
+    </button>
+    <script src="app.js"></script>
+</body>

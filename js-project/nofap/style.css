@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    transition: .5s all ease;
+    /*outline: 1px solid #fff;*/
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(59, 56, 56); */
+    /* color: rgb(240, 229, 229); */
+    background-color: #00203f;
+    color: #adf0d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    animation-name: sidebarAni;
+    animation-duration: .5s;
+}
+
+#sidebar {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: #adf0d1;
+    color: #00203f;
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: max-content;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes sidebarAni {
+    from {
+        left: -50%
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@media screen and (min-width:670px) {
+    #sidebar {
+        width: 25%;
+    }
+}
+
+#closeSideBar {
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    width: 25px;
+}
+
+#sidebar div {
+    padding: .6rem;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+}
+
+.achieveName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1.5rem 1rem;
+    text-align: center;
+}
+
+.item {
+    text-align: center;
+}
+
+.h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 4rem;
+    margin: 5rem 2rem 2rem 3rem;
+    width: fit-content;
+    text-align: center;
+    /* margin: auto; */
+}
+
+@media screen and (max-width:525px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 13rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .big-text {
+        font-size: 8rem;
+    }
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.3rem;
+}
+
+input {
+    background-color: #f5eeee;
+    text-align: center;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.popup {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #5cb189;
+    position: absolute;
+    top: 45%;
+    padding: 1rem;
+    display: none;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.popup input {
+    font-size: 1.1rem;
+    width: fit-content;
+}
+
+.popup btn {
+    font-size: 1.1rem;
+    width: fit-content;
+    padding: 3% 30%;
+}
+
+.addpop {
+    display: flex;
+}
+
+.btn {
+    border: none;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 1px;
+    font-family: Arial;
+    color: #000;
+    font-size: 1rem;
+    background: #f0e5e5;
+    margin: .5rem;
+    padding: .6rem 5rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.edit-btn {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 3px;
+    font-family: Arial;
+    color: #000;
+    font-size: 1rem;
+    background: #f0e5e5;
+    /* padding: .2rem .5rem; */
+    text-decoration: none;
+    font-weight: normal;
+    background-color: #00203f;
+}
+
+.svg {
+    width: 25px;
+}
+
+.star {
+    cursor: pointer;
+    left: 3px;
+    top: 10px;
+    position: absolute;
+    width: 25px;
+}
+
+#achievementDiv {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#achieve {
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#quote {
+    width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#lastrelapse {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
