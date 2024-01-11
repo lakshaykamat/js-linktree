@@ -38,12 +38,12 @@ main {
   align-items: center;
 }
 .button {
-    margin: 1rem;
-    background-color: rgb(192, 192, 192);
-    padding: 0.7rem 2rem;
-    background-image: linear-gradient(
-        to right,
-        #7474bf 0%,
+  margin: 1rem;
+  background-color: rgb(192, 192, 192);
+  padding: 0.7rem 2rem;
+  background-image: linear-gradient(
+    to right,
+    #7474bf 0%,
     #348ac7 51%,
     #7474bf 100%
   );
@@ -56,10 +56,10 @@ main {
   width: 40%;
 }
 @media screen and (max-width: 850px) {
-    .button{
-        width: 80%;
-    }
-} 
+  .button {
+    width: 80%;
+  }
+}
 .button:hover {
   transform: scaleX(1.05);
   display: block;
@@ -67,13 +67,13 @@ main {
   color: #fff;
 }
 .button-text {
-    color: #fff ;
-    text-decoration: none;
-    display: block;
-    text-align: center;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
   font-size: 1.2rem;
 }
-footer{
+footer {
   margin-top: 2rem;
   padding: 1rem;
   background-color: #242424;
@@ -81,18 +81,18 @@ footer{
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.txt{
+.txt {
   text-align: center;
   color: #fff;
   font-size: 1.7rem;
 }
-.logos{
+.logos {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-.logos img{
+.logos img {
   cursor: pointer;
   display: flex;
   align-items: center;
